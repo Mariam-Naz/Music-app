@@ -1,0 +1,61 @@
+body{
+   overflow: hidden;
+   margin-left: 0px;
+   margin-right: 0px;
+}
+center{
+    font-size: 150%;
+    margin-top: 50px;
+}
+.pads{
+    transform: translateY(180%);
+    margin-bottom: -300%;
+    display: flex;
+}
+.pads >div{
+    flex: 1%;
+    height: 150px;
+    width: 100px;
+    
+}
+.pad1{
+    background-color: lightblue;
+}
+.pad2{
+    background-color: lightcoral;
+}
+.pad3{
+    background-color: lightgreen;
+}
+.pad4{
+    background-color: slateblue;
+}
+.pad5{
+    background-color: rgb(10, 216, 216);
+}
+.pad6{
+    background-color: chocolate;
+}
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left:10%
+    }
+    50%{
+        bottom: 70%;
+        left:50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 100%;
+    }
+}
+.visual > div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0%;
+    left: 50%;
+    z-index: -1;
+}
